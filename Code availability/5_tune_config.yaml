@@ -1,0 +1,43 @@
+method: random
+name: sweep
+metric:
+  goal: minimize
+  name: best_valid_loss
+early_terminate:
+  type: hyperband
+  eta: 2
+  min_iter: 3000
+parameters:
+  activation:
+    distribution: categorical
+    values:
+      - relu
+      - tanh
+      - leaky_relu
+  hidden_size_1:
+    distribution: int_uniform
+    max: 20
+    min: 4
+  hidden_size_2:
+    distribution: int_uniform
+    max: 10
+    min: 2
+  lr:
+    distribution: uniform
+    max: 0.005
+    min: 0.0001
+  weight_decay:
+    distribution: uniform
+    max: 0.0005
+    min: 0.00001
+  select:
+    distribution: categorical
+    values:
+      - LDA
+      - PCA
+      - Ridge+GA
+      - Ridge+Iter
+      - MahDistance+GA
+      - MahDistance+Iter
+      - manual+10
+program: 5_tune.py
