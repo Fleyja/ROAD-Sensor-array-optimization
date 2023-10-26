@@ -16,4 +16,4 @@ Before each gas testing session, a gas mixture with a concentration of 50% of th
 
 # For Code Availability
 
-In our ROAD method, the code and data collection processes associated with the first two steps are closely linked to the robotic system. Isolating this portion of the code separately is not feasible without the robotic system. Therefore, we provide only the code for the third step, which includes a genetic algorithm for subarray search and a backpropagation neural network for array readout.
+In our ROAD method, the code and data collection processes associated with the first two steps are closely linked to the robotic system. Isolating this portion of the code separately is not feasible without the robotic system. Therefore, we provide only the code for the third step, which includes a genetic algorithm for subarray screening and a backpropagation neural network for array readout.
