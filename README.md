@@ -14,6 +14,8 @@ In the calibration testing data, we compared 6 different array evaluation and se
 
 Before each gas testing session, a gas mixture with a concentration of 50% of the maximum range is introduced. This procedure aims to flush out any dead volumes in the gas pathways.
 
+The raw data of DBTM process has also been provided.
+
 # For Code Availability
 
 In our ROAD method, the code and data collection processes associated with the first two steps are closely linked to the robotic system. Isolating this portion of the code separately is not feasible without the robotic system. Therefore, we provide only the code for the third step, which includes a genetic algorithm for subarray screening and a backpropagation neural network for array readout.
